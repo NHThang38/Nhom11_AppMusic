@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">App Music</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAUFEz8EhzrkORug4qlNKjQE7eQ-ap53z0</string>
 </resources>

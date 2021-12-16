@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -19,11 +22,21 @@ public class logginScreen extends AppCompatActivity {
     SignInButton sign;
     GoogleSignInClient mGoogleSignInClient;
     int RC_SIGN_IN=0;
+    ImageView btnMap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loggin_screen);
         sign =  findViewById(R.id.sign_in_button);
+        btnMap = findViewById(R.id.btnMap);
+        btnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(logginScreen.this, MapActivity.class);
+                startActivity(intent);
+                Toast.makeText(logginScreen.this, "Bat man hinh Map", Toast.LENGTH_SHORT).show();
+            }
+        });
         sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
