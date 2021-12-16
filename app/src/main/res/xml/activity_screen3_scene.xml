@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnSwipe
+            motion:touchAnchorId="@+id/view"
+            motion:dragDirection="dragDown" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView3"
+            motion:layout_constraintTop_toBottomOf="@+id/imageButton"
+            motion:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginStart="176dp"
+            android:layout_marginLeft="176dp"
+            android:layout_marginTop="48dp"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/tvloi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteY="412dp"
+            motion:layout_editor_absoluteX="281dp"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/recyclerView2"
+            android:layout_width="186dp"
+            android:layout_height="8dp"
+            motion:layout_editor_absoluteY="610dp"
+            motion:layout_editor_absoluteX="1dp"
+            android:alpha="0" />
+        <Constraint
+            android:layout_height="74dp"
+            android:layout_marginTop="64dp"
+            android:layout_width="90dp"
+            motion:layout_constraintTop_toBottomOf="@+id/seekBar"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="184dp"
+            android:layout_marginStart="184dp"
+            android:id="@+id/imageButton" />
+        <Constraint
+            android:layout_marginEnd="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="32dp"
+            motion:layout_constraintTop_toTopOf="@+id/imageButton"
+            android:layout_width="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@+id/imageButton"
+            android:id="@+id/imageView6" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toTopOf="@+id/imageButton"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toEndOf="@+id/imageButton"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:id="@+id/imageView7" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="280dp"
+            android:layout_width="355dp"
+            motion:layout_constraintTop_toBottomOf="@+id/name"
+            android:id="@+id/textView3"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp" />
+        <Constraint
+            android:layout_height="107dp"
+            android:layout_width="124dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tvloi"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="44dp"
+            android:id="@+id/detalAnh"
+            android:layout_marginLeft="44dp"
+            android:alpha="1"
+            android:layout_marginTop="20dp" />
+        <Constraint
+            android:layout_height="16dp"
+            android:layout_width="345dp"
+            motion:layout_constraintTop_toBottomOf="@+id/detalAnh"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:id="@+id/seekBar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/view" />
+        <Constraint
+            android:id="@+id/detailname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/detalAnh"
+            android:layout_marginStart="104dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/detailcamption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/detailname"
+            android:layout_marginStart="104dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:alpha="0" />
+        <Constraint
+            android:layout_height="62dp"
+            android:layout_marginTop="44dp"
+            android:layout_width="70dp"
+            motion:layout_constraintTop_toBottomOf="@+id/seekBar"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="168dp"
+            android:layout_marginStart="168dp"
+            android:id="@+id/imageButton" />
+        <Constraint
+            android:layout_height="139dp"
+            android:layout_width="305dp"
+            motion:layout_constraintTop_toBottomOf="@+id/name"
+            android:id="@+id/tvloi"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp" />
+        <Constraint
+            android:layout_height="96dp"
+            android:layout_width="397dp"
+            motion:layout_constraintTop_toBottomOf="@+id/imageButton"
+            android:id="@+id/recyclerView2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/imageButton"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toEndOf="@+id/imageButton"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/imageView7" />
+        <Constraint
+            android:layout_marginEnd="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            motion:layout_constraintTop_toTopOf="@+id/imageButton"
+            android:layout_width="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@+id/imageButton"
+            android:id="@+id/imageView6" />
+    </ConstraintSet>
+</MotionScene>
